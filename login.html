@@ -198,15 +198,10 @@
         return false;
       } else {
         event.target.classList.add('valid')
-        let maxLength = parseInt(event.target.attributes["maxlength"].value, 10);
+        let maxLength = parseInt(event.target.attributes["maxlength"].value);
         let myLength = event.target.value.length;
         if (myLength >= maxLength) {
           let next = event.target;
-          let cleave = new Cleave(next, {
-            numeral: true,
-            numeralThousandsGroupStyle: 'thousand'
-          });
-          console.log(cleave)
           while (next = next.nextElementSibling) {
             if (next == null)
               break;
