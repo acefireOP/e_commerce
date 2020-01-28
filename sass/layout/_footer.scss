@@ -1,0 +1,25 @@
+.footer-section {
+  background-image: url(../img/footer-olas.svg);
+  height: 500px;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-top: 60px;
+  @media(max-width: 768px){
+    height: 380px
+  }
+  @media(max-width: 480px){
+    height: 320px
+  }
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media(max-width: 768px){
+      img{
+        width: 150px;
+      }
+    }
+  }
+}

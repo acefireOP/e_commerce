@@ -1,0 +1,471 @@
+.button-wave {
+  display: block;
+	padding: 12px 20px;
+	border-radius: 6px;
+	font-family: 'cerapro';
+  font-size: 14px;
+  font-weight: 600!important;
+	cursor: pointer;
+	background: transparent;
+	background-repeat: repeat-x;
+	background-position: 0 -60%;
+	transition: background-position 1.5s ease,color 0.5s ease;
+	width: 100%;
+  max-width: max-content;
+  max-width: -moz-available;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  white-space: nowrap;
+
+  &.wave-bubble-gum,
+  &.wave-purple{
+    &.reintentar{
+      &.active{
+        background-color: #C5BCCC!important;
+        border: 1px solid #C5BCCC!important;
+        .loading-text{
+          .loading-img{
+            width: 30px;
+            animation: rotation 2s infinite linear;
+            display: none;
+            @keyframes rotation {
+              from {
+                  -webkit-transform: rotate(0deg);
+              }
+              to {
+                  -webkit-transform: rotate(360deg);
+              }
+            }
+          }
+        }
+        &.loading-in{
+          pointer-events: none;
+          .loading-text{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .loading-img{
+              display: inline-block;
+              width: 20px;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      
+      
+      
+    }
+  }
+    
+
+    &.wave-purple {
+        background-color: #2D1441;
+        background-image: url(../img/wave-button-white.svg);
+        color: #fff;
+        border: 1px #381451 solid!important;
+        &.mw-270,
+        &.mw-300
+        {
+            background-image: url(../img/wave-button-white-md.svg);
+        }
+
+        &.bg-transparent{
+          background-color: transparent;
+        }
+
+        .wave-ico{
+            
+          svg{
+              path{
+                  fill: #ffffff;
+                  transition:  fill .3s;
+              }
+          }
+        }
+
+        &:hover {
+            color: #2D1441;
+
+            .wave-ico{
+              svg{
+                path{
+                  fill: #2D1441;
+                }
+              }
+            }
+        }
+    }
+
+    &.wave-purple-outline {
+        background-color: #ffffff;
+        background-image: url(../img/wave-button-purple.svg);
+        color: #2D1441;
+        border: 1px #2D1441 solid!important;
+        &.mw-270,
+        &.mw-300
+        {
+            background-image: url(../img/wave-button-purple-md.svg);
+        }
+
+        &.bg-transparent{
+          background-color: transparent;
+        }
+
+        .wave-ico{
+            
+          svg{
+              path{
+                  fill: #2D1441;
+                  transition:  fill .3s;
+              }
+          }
+        }
+
+        &:hover {
+            color: #ffffff;
+
+            .wave-ico{
+              svg{
+                path{
+                  fill: #ffffff;
+                }
+              }
+            }
+        }
+        &.fd-row{
+          display:flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: center;
+          padding:8px 20px;
+        }
+    }
+
+    &.wave-bubble-gum {
+        background-color: #e62771;
+        background-image: url(../img/wave-button-white.svg);
+        color: #fff;
+        border: 1px #e62771 solid!important;
+        &.mw-270,
+        &.mw-300
+        {
+          background-image: url(../img/wave-button-white-md.svg);
+        }
+
+        &.bg-transparent{
+          background-color: transparent;
+        }
+      .wave-ico{
+          svg{
+              path{
+                  fill: #ffffff;
+                  transition:  fill .3s;
+              }
+          }
+        }
+
+        &:hover {
+          color: #e62771;
+
+        .wave-ico{
+            svg{
+              path{
+                fill: #e62771;
+              }
+            }
+          }
+        }
+    }
+
+    &.wave-bubble-gum-outline {
+        background-image: url(../img/wave-button-bubble-gum.svg);
+        color: #e62771;
+        border: 1px #e62771 solid!important;
+        &.mw-270,
+        &.mw-300
+        {
+          background-image: url(../img/wave-button-bubble-gum-md.svg);
+        }
+
+        &.bg-transparent{
+          background-color: transparent;
+        }
+
+        .wave-ico{
+            
+          svg{
+              path{
+                  fill: #e62771;
+                  transition:  fill .3s;
+              }
+          }
+        }
+
+        &:hover {
+          color: #ffffff;
+
+          .wave-ico{
+            svg{
+              path{
+                fill: #ffffff;
+              }
+            }
+          }
+        }
+    }
+
+    &.wave-white {
+        background-color: #ffffff;
+        background-image: url(../img/wave-button-purple.svg);
+        color: #381451;
+        border: 1px #ffffff solid!important;
+        &.mw-270,
+        &.mw-300
+        {
+            background-image: url(../img/wave-button-purple-md.svg);
+        }
+
+        .wave-ico{
+            
+          svg{
+              path{
+                  fill: #381451;
+                  transition:  fill .3s;
+              }
+          }
+        }
+
+        &:hover {
+            color: #ffffff;
+            &.wave-ico{
+              svg{
+                  path{
+                      fill: #ffffff;
+                  }
+              }
+            }
+            .wave-ico{
+              svg{
+                  path{
+                      fill: #ffffff;
+                  }
+              }
+            }
+        }
+    }
+
+    &.wave-white-outline {
+        background-image: url(../img/wave-button-white.svg);
+        color: #ffffff;
+        border: 1px #ffffff solid!important;
+        &.mw-270,
+        &.mw-300
+        {
+            background-image: url(../img/wave-button-white-md.svg);
+        }
+
+        &.bg-transparent{
+            background-color: transparent;
+        }
+        &.wave-ico{
+            
+          svg{
+              path{
+                  fill: #ffffff;
+                  transition:  fill .3s;
+              }
+          }
+        }
+        .wave-ico{
+            
+            svg{
+                path{
+                    fill: #ffffff;
+                    transition:  fill .3s;
+                }
+            }
+        }
+
+        &:hover {
+            color: #381451;
+
+            .wave-ico{
+                svg{
+                    path{
+                        fill: #381451;
+                    }
+                }
+            }
+            &.wave-ico{
+                svg{
+                    path{
+                        fill: #381451;
+                    }
+                }
+            }
+        }
+    }
+    
+    &.wave-disabled {
+        background-color: #ddd4d8;
+        color: #fff;
+        border: 1px #ddd4d8 solid!important;
+        pointer-events: none;
+    }
+
+    &.f-14{
+        font-size: 14px!important;
+    }
+    &.m-0{
+        margin: 0!important;
+    }
+    &.mw-full{
+        max-width: 100%;
+    }
+    &.mw-140{
+      max-width: 140px;
+    }
+    &.mw-160{
+        max-width: 160px;
+    }
+    &.mw-170{
+      max-width: 170px;
+    }
+    &.mw-180{
+        max-width: 180px;
+    }
+    &.mw-190{
+        max-width: 190px;
+    }
+    &.mw-200{
+        max-width: 200px;
+    }
+    &.mw-210{
+      max-width: 210px;
+    }
+    &.mw-220{
+      max-width: 220px;
+    }
+    &.mw-240{
+      max-width: 240px;
+    }
+    &.mw-260{
+        max-width: 260px;
+    }
+    &.mw-270{
+        max-width: 270px;
+    }
+    &.mw-280{
+      max-width: 280px;
+    }
+    &.mw-300{
+        max-width: 300px;
+    }
+    &.mw-310{
+      max-width: 310px;
+    }
+    &.mw-350{
+        max-width: 350px;
+    }
+    &.mx-auto{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &.calc-less-p20{
+      width: calc(100% + -40px);
+    }
+    &.calc-more-p20{
+      width: calc(100% + -40px);
+    }
+    &.mt-10{margin-top: 10px;}
+    &.mt-20{margin-top: 20px;}
+    &.mt-30{margin-top: 30px;}
+    &.mt-40{margin-top: 40px;}
+    &.mt-50{margin-top: 50px;}
+    &.mb-10{margin-bottom: 10px;}
+    &.mb-20{margin-bottom: 20px;}
+    &.mb-30{margin-bottom: 30px;}
+    &.mb-40{margin-bottom: 40px;}
+    &.mb-50{margin-bottom: 50px;}
+    &.my-10{margin-top: 10px; margin-bottom: 10px;}
+    &.my-20{margin-top: 20px; margin-bottom: 20px;}
+    &.my-30{margin-top: 30px; margin-bottom: 30px;}
+    &.my-40{margin-top: 40px; margin-bottom: 40px;}
+    &.my-50{margin-top: 50px; margin-bottom: 50px;}
+    &.mx-10{margin-left: 10px; margin-right: 10px;}
+    &.mx-20{margin-left: 20px; margin-right: 20px;}
+    &.mx-30{margin-left: 30px; margin-right: 30px;}
+    &.mx-40{margin-left: 40px; margin-right: 40px;}
+    &.mx-50{margin-left: 50px; margin-right: 50px;}
+    &.py-3{padding-top: 3px; padding-bottom: 3px;}
+    &.py-10{padding-top: 10px; padding-bottom: 10px;}
+    &.py-20{padding-top: 20px; padding-bottom: 20px;}
+    &.py-30{padding-top: 30px; padding-bottom: 30px;}
+    &.py-40{padding-top: 40px; padding-bottom: 40px;}
+    &.py-50{padding-top: 50px; padding-bottom: 50px;}
+    &.px-10{padding-left: 10px; padding-right: 10px;}
+    &.px-20{padding-left: 20px; padding-right: 20px;}
+    &.px-30{padding-left: 30px; padding-right: 30px;}
+    &.px-40{padding-left: 40px; padding-right: 40px;}
+    &.px-50{padding-left: 50px; padding-right: 50px;}
+	&:hover {
+		background-position: 400% 50%;
+		color: #fff;
+  }
+}
+
+.button-switch{
+  width: 70px;
+  height: 32px;
+  background-color: #E5E1E7;
+  border-radius: 15px;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  transition: background-color .3s;
+  .switch-circle{
+    width: 28px;
+    height: 28px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    border-radius: 15px;
+    transition: transform .3s;
+  }
+  &.off{
+    background-color: #E5E1E7;
+    .switch-circle{
+      transform: translateX(0px);
+    }
+  }
+  &.on{
+    background-color: #E92070;
+    .switch-circle{
+      transform: translateX(38px);
+    }
+  }
+  .switch-icon-spin{
+    display: none;
+  }
+  &.process{
+    background-color: #FFBD00;
+    background-image: repeating-linear-gradient(-45deg, transparent, transparent 0.4rem, #e4a51f 0.5rem, #e4a51f 0.6rem, #eaa81a 0.9rem);
+    background-size: 200% 200%;
+    animation: barberpole 5s linear infinite;
+    .switch-icon-spin{
+      width: 100%;
+      display: block;
+      animation-name: rotate;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+}

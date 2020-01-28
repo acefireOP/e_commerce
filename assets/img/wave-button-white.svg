@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="280px" height="135px" viewBox="0 0 280 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wave-button-purple" transform="translate(-169.000000, 0.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="top-wave" transform="translate(306.500000, 67.500000) rotate(180.000000) translate(-306.500000, -67.500000) translate(0.000000, -0.000000)">
+                <path d="M0,2.4158453e-12 L613,2.4158453e-12 L613,127.056923 C587.509014,132.352253 562.016037,135 536.520737,135 C498.270488,135 485.516203,127.056923 460.01377,127.056923 C421.760369,127.056923 421.760369,135 383.506968,135 C345.253401,135 345.253401,127.056923 307,127.056923 C268.746599,127.056923 268.746599,135 230.493032,135 C192.239631,135 192.239631,127.056923 153.98623,127.056923 C128.483797,127.056923 115.729014,135 77.4792627,135 C51.9836313,135 26.4906544,132.352253 1,127.056923 L0,2.4158453e-12 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>

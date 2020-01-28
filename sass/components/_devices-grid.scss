@@ -1,0 +1,192 @@
+.devices-grid{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .wom-devices-grid{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    @media(max-width: 768px){
+      box-shadow: 0px 0px 4px rgba(45, 20, 65, 0.2);
+      background-color: #FFFFFF;
+      padding-bottom:100px;
+    }
+    .device-item{
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background:white;
+      padding:20px;
+      border-radius:8px;
+      min-width:215px;
+      max-width:22%;
+      width:100%;
+      box-shadow: 0px 6px 12px rgba(56, 20, 81, 0.15);
+      transition:all 0.4s ease;
+      margin:10px;
+      position:relative;
+      .no-stock{
+        position:absolute;
+        right:10px;
+        top:10px;
+        display:none;
+        flex-direction:row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        padding:0px 6px;
+        border: 1px solid #7C6C8A;
+        p{
+          font-size: 12px;
+          line-height: 22px;
+          color: #7C6C8A;
+        }
+      }
+      &.disabled{
+        pointer-events:none;
+        user-select:none;
+        filter:grayscale(100%);
+        h2,h3,.phone-desc,.phone-price,.button-wave{
+          opacity:0.5;
+        }
+        .no-stock{
+          display:flex;
+        }
+      }
+      &:hover{
+        box-shadow: 0px 24px 48px rgba(56, 20, 81, 0.15);
+      }
+      h3{
+        font-size: 14px;
+        line-height: 18px;
+        color: #381451;
+      }
+      h2{
+        font-size: 22px;
+        line-height: 28px;
+        color: #E92070;
+        font-weight:700;
+        padding-bottom:8px;
+      }
+      .phone-desc{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .phone-desc-column{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding-left:10px;
+          &__item{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding:7px;
+            border-bottom:1px solid #B3A6BA;
+            p{
+              font-size: 13px;
+              line-height: 17px;
+              color:#B3A6BA;
+            }
+            &:last-child{
+              border-bottom:none;
+            }
+          }
+        }
+      }
+      .phone-price{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding:20px;
+        margin-top:12px;
+        width:100%;
+        border-top: 1px solid #E6E2E8;
+        p{
+          font-size: 12px;
+          line-height: 16px;
+          color: #7C6C8A;
+          padding-right:10px
+        }
+        h3{
+          font-size: 24px;
+          line-height: 16px;
+          color: #E92070;
+        }
+      }
+      @media(max-width: 768px){
+        max-width:45%;
+        width:100%;
+        background:transparent;
+        box-shadow: none;
+        border-bottom: 1px solid #CCC4D2;
+      }
+      @media(max-width: 500px){
+        max-width:100%;
+        width:100%;
+      }
+    }
+  }
+  .pagination-container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    @media(max-width: 768px){
+      transform:translateY(-100px)
+    }
+    .pagination-header{
+      h5{
+        font-size: 16px;
+      line-height: 19px;
+      color: #21102E;
+      padding:16px 0px;
+      font-weight:400;
+      span{
+        font-weight:700;
+      }
+      } 
+    }
+    .pagination-row{
+      display:flex;
+      flex-direction:row;
+      justify-content: center;
+      align-items:center;
+      .button-next,.button-prev{
+        margin:0px 20px;
+        transform:translateY(3px);
+        cursor:pointer;
+      }
+      .pagination-button{
+        height:28px;
+        width:28px;
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        align-items:center;
+        font-family: cerapro;
+        font-size: 17px;
+        line-height: 20px;
+        cursor:pointer;
+        
+        &.active{
+          background: #E92070;
+          border-radius:50%;
+          color:white;
+        }
+        &.suspense{
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}

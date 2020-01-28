@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/swiper.min.css">
+  <title>WOM - E-Commerce</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <div class="top-waves"></div>
+    <section class="top-section">
+
+      <div class="wom-section-container">
+        <div class="logo-container">
+          <img src="assets/img/wom-logo.svg" alt="">
+        </div>
+        <div class="right-icons-container">
+          <a href="" class="right-icon-elem">
+            <img src="assets/img/shopping-cart.svg" alt="">
+          </a>
+          <a href="" class="right-icon-elem">
+            <img src="assets/img/user-icon.svg" alt="">
+          </a>
+        </div>
+      </div>
+
+      <div id="top-alert" class="wom-section-container wom-top-alert">
+        <div class="wom-alert-container">
+          <h4>De <span>2 hasta 24 cuotas sin intéres</span></h4>
+          <img src="assets/img/bancos.svg" alt="">
+          <div class="alert-close-icon">
+            <img src="assets/img/cerrar.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="wom-section-container breadcrum-container">
+        <img src="assets/img/house-icon.svg" alt="">
+        <ul>
+          <li>Inicio</li>
+          <li>Catálogo de equipos</li>
+        </ul>
+      </div>
+
+      <div class="wom-section-container wom-page-header">
+        <h1>Renueva tu equipo</h1>
+      </div>
+    </section>
+
+    <section class="selection-section">
+      <div class="wom-section-container">
+        <div class="wrapper-ficha">
+          <img class="star-destacado" src="assets/img/over.svg" alt="">
+          <div class="ficha-slider">
+            <hgroup>
+              <h4>Cámbiate a un</h4>
+              <h2>Huawei P20 Pro</h2>
+              <h3>Desde $530.000</h3>
+              <p class="sku">SKU 000000</p>
+            </hgroup>
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img class="slider-img-equipo" src="assets/img/ficha/equipo-ficha.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slider-img-equipo" src="assets/img/ficha/equipo-ficha.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slider-img-equipo" src="assets/img/ficha/equipo-ficha.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="slider-img-equipo" src="assets/img/ficha/equipo-ficha.png" alt="">
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="slider-info">
+              <div>
+                <img src="assets/img/ficha/ico-despacho.svg" alt="">
+                <p>Despacho a Domicilio GRATIS</p>
+              </div>
+              <div>
+                <img src="assets/img/ficha/ico-elocker.svg" alt="">
+                <p>Retiro en eLocker GRATIS</p>
+              </div>
+              <div>
+                <img src="assets/img/ficha/ico-tarjeta.svg" alt="">
+                <p>Desde 2 a 24 cuotas sin interés</p>
+              </div>
+            </div>
+          </div>
+          <div class="ficha-info sin-stock">
+            <div class="info-group-title">
+              <hgroup>
+                <h4>Cámbiate a un</h4>
+                <h2>Huawei P20 Pro</h2>
+                <h3>Desde $530.000</h3>
+              </hgroup>
+              <p class="sku">SKU 000000</p>
+            </div>
+            <div class="divider-solid mt-20 mb-20"></div>
+            <div class="info-form">
+              <span class="form-tx">¡Déjanos tu correo y <b>te avisamos cuando tengamos stock!</b></span>
+              <div class="form-wrapper">
+                <div class="wom-input-container">
+                  <input id="input-email" class="form-input email-form-input" type="text" maxlength="50">
+                  <label class="wom-input-label" for="input-name1">
+                    <span>E-Mail</span>
+                  </label>
+                  <span class="user-icon"><img src="assets/img/ficha/envelope-icon.svg" alt=""></span>
+                  <span class="example-text">Ej: usuario@correo.cl</span>
+                  <span class="warning-icon"><img src="assets/img/ficha/attention-icon.svg" alt=""></span>
+                  <span class="warning-text">Escriba su Email correctamente</span>
+                  <span class="valid-icon"><img src="assets/img/ficha/valid-icon.svg" alt=""></span>
+                </div>
+                <button class="button-wave wave-bubble-gum mw-190 wave-disabled siguiente">avisarme</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section">
+      <div class="tabs-intersection-wrap intersection-sin-stock">
+        <div class="tabs-header">
+          <div class="wom-section-container tabs-wrap">
+            <div class="pdp-tab-item active" data-tab="tab-desc">Descripción</div>
+            <div class="pdp-tab-item" data-tab="tab-details">Características</div>
+            <div class="pdp-tab-item" data-tab="tab-content">Contenido Caja</div>
+          </div>
+        </div>
+      </div>
+      <div class="tabs-content">
+        <div class="tab-content-item active" id="tab-desc">
+          <!--<img class="img-desktop" src="assets/img/Group 332.png" alt="" style="width:100%">
+          <img class="img-tablet" src="assets/img/ficha/descripcion_tablet.jpg" alt="" style="width:100%">
+          <img class="img-mobile" src="assets/img/ficha/descripcion_mobile.jpg" alt="" style="width:100%">-->
+          <div class="container-description">
+            
+            <!--//////////INICIO DESCRIPCIÓN 1//////////-->
+            <article class="wom-article-container">
+              <div class="container-double">
+                <div>
+                  <h2>HUAWEI P20 PRO</h2>
+                  <p>La serie P de HUAWEI siempre ha sido pionera en fotografía entre los smartphones. 
+                    El HUAWEI P20 Pro lidera el camino con una revolucionaria Triple Cámara Leica, 
+                    donde la visión estética se combina con un avanzado sistema de cámara que introduce 
+                    a la fotografía inteligente.</p>
+                </div>
+                <div class="small-img"><img src="assets/img/ficha/img_description_1.png" alt=""></div>
+              </div>
+            </article>
+            <!--//////////FIN DESCRIPCIÓN 1//////////-->
+
+            <!--//////////INICIO DESCRIPCIÓN 2//////////-->
+            <article class="wom-article-container">
+              <div class="video-responsive">
+                <iframe width="100%" src="https://www.youtube.com/embed/UBdBnB3gleE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </article>
+            <!--//////////FIN DESCRIPCIÓN 2//////////-->
+
+            <!--//////////INICIO DESCRIPCIÓN 3//////////-->
+            <article class="wom-article-container">
+              <div class="container-double">
+                <div class="order-mob-2"><img src="assets/img/ficha/image_13.png" alt=""></div>
+                <div class="order-mob-1 double-tx">
+                  <h2>HUAWEI y su nuevo FullView Display</h2>
+                  <p>Sé testigo del poder de la tecnología de pantallas 
+                    de próxima generación ya que la nueva HUAWEI FullView 
+                    Display irrumpe en la pantalla OLED de 6,1" y 
+                    ofrece una gama de colores superior, 
+                    nuestra mejor pantalla hasta la fecha. 
+                    El sensor de huellas digitales sin bordes y 
+                    con navegación inteligente ofrece una mejor superficie de pantalla.</p>
+                </div>
+              </div>
+            </article>
+            <!--//////////FIN DESCRIPCIÓN 3//////////-->
+
+            <!--//////////INICIO DESCRIPCIÓN 4//////////-->
+            <article class="wom-article-container">
+              <div class="container-single">
+                <div class="single-info">
+                  <h2>Encuadre profesional</h2>
+                  <p>La serie P de HUAWEI siempre ha sido pionera en fotografía entre los smartphones. 
+                    El HUAWEI P20 Pro lidera el 
+                    camino con una revolucionaria Triple Cámara Leica
+                  </p>
+                </div>
+                <div><img src="assets/img/ficha/image_12.png" alt=""></div>
+              </div>
+            </article>
+            <!--//////////FIN DESCRIPCIÓN 4//////////-->
+
+            <!--//////////INICIO DESCRIPCIÓN 5//////////-->
+            <article class="wom-article-container">
+              <div class="container-gridcard">
+                <h2>Conoce más</h2>
+                <div class="wrapper-gridcard">
+                  <div class="gridcard">
+                    <picture><img src="" alt=""></picture>
+                    <h3>Pantalla retina 5”</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus 
+                    qui blanditiis praesentium voluptatum deleniti.</p>
+                  </div>
+                  <div class="gridcard">
+                    <picture><img src="" alt=""></picture>
+                    <h3>Pantalla retina 5”</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus 
+                      qui blanditiis praesentium voluptatum deleniti.</p>
+                  </div>
+                  <div class="gridcard">
+                    <picture><img src="" alt=""></picture>
+                    <h3>Pantalla retina 5”</h3>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus 
+                      qui blanditiis praesentium voluptatum deleniti.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <!--//////////FIN DESCRIPCIÓN 5//////////-->
+
+          </div>
+        </div>
+        <div class="tab-content-item" style="display:none" id="tab-details">
+        <div class="details-wrap">
+          <div class="details-left">
+            <h2>Características destacadas</h2>
+            <div class="details-left-box">
+              <div class="details-icon-container">
+                <img src="assets/img/ficha/details-bateria.svg" alt="">
+              </div>
+              <div class="details-text-container">
+                <h4>Batería</h4>
+                <p>10 hrs en uso</p>
+              </div>
+            </div>
+            <div class="details-left-box">
+              <div class="details-icon-container">
+                <img src="assets/img/ficha/ico_procesador.svg" alt="">
+              </div>
+              <div class="details-text-container">
+                <h4>Procesador</h4>
+                <p>HiSilicon Kirin 970</p>
+              </div>
+            </div>
+            <div class="details-left-box">
+              <div class="details-icon-container">
+                <img src="assets/img/ficha/ico_camara.svg" alt="">
+              </div>
+              <div class="details-text-container">
+                <h4>Cámara</h4>
+                <p>Trasera: 40 MP</p>
+                <p>Frontal: 24 Mp</p>
+              </div>
+            </div>
+            <div class="details-left-box">
+              <div class="details-icon-container">
+                <img src="assets/img/ficha/ico_almacenamiento.svg" alt="">
+              </div>
+              <div class="details-text-container">
+                <h4>Almacenamiento</h4>
+                <p>128GB</p>
+              </div>
+            </div>
+            <div class="details-left-box">
+              <div class="details-icon-container">
+                <img src="assets/img/ficha/ico_sistema_operativo.svg" alt="">
+              </div>
+              <div class="details-text-container">
+                <h4>Sistema Operativo</h4>
+                <p>Android 8.1 - Oreo</p>
+              </div>
+            </div>
+            <div class="details-left-box">
+              <div class="details-icon-container">
+                <img src="assets/img/ficha/ico_pantalla.svg" alt="">
+              </div>
+              <div class="details-text-container">
+                <h4>Pantalla</h4>
+                <p>6,1 Pulgadas</p>
+              </div>
+            </div>
+          </div>
+          <div class="details-right">
+            <h2>Detalles técnicos</h2>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Marca</h4></div>
+              <div class="right-row-right"><h4>Huawei</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Modelo</h4></div>
+              <div class="right-row-right"><h4>P30 Pro</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Tipo de batería</h4></div>
+              <div class="right-row-right"><h4>Huawei</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Tiempo en modo espera</h4></div>
+              <div class="right-row-right"><h4>Hasta 10 horas</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Marca</h4></div>
+              <div class="right-row-right"><h4>Huawei</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Modelo</h4></div>
+              <div class="right-row-right"><h4>P30 Pro</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Tipo de batería</h4></div>
+              <div class="right-row-right"><h4>Huawei</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Tiempo en modo espera</h4></div>
+              <div class="right-row-right"><h4>Hasta 10 horas</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Marca</h4></div>
+              <div class="right-row-right"><h4>Huawei</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Modelo</h4></div>
+              <div class="right-row-right"><h4>P30 Pro</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Tipo de batería</h4></div>
+              <div class="right-row-right"><h4>Huawei</h4></div>
+            </div>
+            <div class="detalles-right-row">
+              <div class="right-row-left"><h4>Tiempo en modo espera</h4></div>
+              <div class="right-row-right"><h4>Hasta 10 horas</h4></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="tab-content-item" style="display:none" id="tab-content">Chao</div>
+      </div>
+    </section>
+  </div>
+
+  <section class="footer-section">
+    <div class="wom-section-container footer-container">
+      <img src="assets/img/wom-logo-footer.svg" alt="wom footer logo" class="footer-logo">
+    </div>
+  </section>
+  
+</body>
+<script src="assets/js/swiper.min.js"></script>
+<script src="assets/js/anime.min.js"></script>
+<script>
+window.onload = ()=>{
+
+  var mySwiper = new Swiper ('.swiper-container', {
+    loop: true,
+    slidesPerView: 1,
+    centeredSlides: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  })
+
+  const closeTopAlert = (elem,button)=>{
+    button.addEventListener('click',()=>{
+      anime.timeline({
+        easing: 'easeInOutSine',
+      })
+      .add({
+        targets: elem,
+        opacity: [1, 0],
+        duration:300,
+        endDelay:200,
+        complete: ()=>{
+          elem.style.display = 'none'
+        }
+      })
+    })
+  }
+  closeTopAlert(document.querySelector('.wom-top-alert'),document.querySelector('.alert-close-icon'))
+
+  const tabsBehavior = (tabs)=>{
+    function tabButtonHandler(){
+      tabs.forEach((item)=>item.classList.remove('active'))
+      this.classList.add('active')
+      const targetTab = document.querySelector(`#${this.dataset.tab}`)
+      const currentTab = document.querySelector('.tab-content-item.active')
+
+      currentTab.classList.remove('active')
+      setTimeout(()=>{
+        currentTab.style.display = 'none'
+        targetTab.style.display = 'flex'
+        setTimeout(()=>{
+          targetTab.classList.add('active')
+        },20)
+      },300)
+    }
+    tabs.forEach((tab)=>{
+      tab.addEventListener('click',tabButtonHandler)
+    })
+    
+  }
+  tabsBehavior(document.querySelectorAll('.pdp-tab-item'))
+  
+}
+</script>
+<script>
+  /*--------JAVASCRIPT INPUT----------*/
+  const formInputs = document.querySelectorAll(".form-input");
+  for (let i = 0; i < formInputs.length; i++) {
+    formInputs[i].addEventListener("focus", function () {
+        this.parentElement.querySelector(".user-icon").classList.add("active");
+    })
+    formInputs[i].addEventListener("focusout", function () {
+        if (this.parentElement.classList.contains('input-valid')) {
+            this.parentElement.querySelector(".user-icon").classList.add("active");
+        }
+        if(this.value.length == 0) {
+            this.parentElement.querySelector(".user-icon").classList.remove("active");
+            this.nextElementSibling.classList.remove('active');
+            this.parentElement.classList.remove('input-invalid');
+        }
+        else{
+            this.parentElement.querySelector(".user-icon").classList.add("active");
+            this.nextElementSibling.classList.add('active');
+        }
+    })
+  }
+
+  /*----------- EMAIL VALIDATION ----------------*/
+  function validateEmail(input) {
+    if (!
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+      .test(input.value)) {
+      input.parentElement.classList.remove('input-valid');
+      input.parentElement.classList.add('input-invalid');
+      return false;
+    }
+    input.parentElement.classList.add('input-valid');
+    input.parentElement.classList.remove('input-invalid');
+  }
+  function validateEmailKey(input) {
+    if (!
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+      .test(input.value)) {
+      input.parentElement.classList.remove('input-valid');
+      return false;
+    }
+    input.parentElement.classList.add('input-valid');
+    input.parentElement.classList.remove('input-invalid');
+  }
+  let emailInput = document.querySelector('#input-email');
+  emailInput.addEventListener('focusout', function(){
+    validateEmail(this);
+    validateInputs();
+  })
+  emailInput.addEventListener('keyup', function(){
+    validateEmailKey(this);
+    validateInputs();
+  })
+
+  // VALID FIELDS VALIDATION
+  function validateInputs(){
+    function checkValid(elem){
+      return elem.classList.contains('input-valid');
+    }
+    let forms = document.querySelectorAll('.wom-input-container');
+    forms = Array.from(forms);
+    const continuarBtn = document.querySelector('.siguiente');
+    let isValid = forms.every(e=> checkValid(e));
+    isValid ? continuarBtn.classList.remove('wave-disabled') : continuarBtn.classList.add('wave-disabled');
+  }
+  
+</script>
+
+</html>

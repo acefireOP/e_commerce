@@ -1,0 +1,30 @@
+section.page-section{
+  width:100%;
+  position:relative;
+  z-index:10;
+  padding:10px 0px;
+}
+.across-notice-section {
+  width: calc(100%);
+  padding: 20px;
+  background-color: #ffffff;
+  margin: 10px 0;
+  .across-notice{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    background:white;
+    user-select: none;
+    h4{
+      font-size: 20px;
+      line-height: 24px;
+      font-weight:300;
+      padding-left:10px;
+      span{
+        font-weight:500;
+      }
+    }
+  } 
+}

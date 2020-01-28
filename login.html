@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>WOM - E-Commerce Login</title>
+</head>
+  <body class="login-blur">
+    
+    <div id="modal-overlay-wom" class="modal-overlay-wom">
+
+      <div class="modal-wom">
+        <!--<span class="close-modal">x</span>-->
+        <div class="content-container">
+          <div class="main-container__main-box">
+            <h3 class="modal-title">Hola Womer</h3>
+            <p class="modal-bajada">Para renovar tu equipo necesitas ingresar a tu cuenta usando tu número WOM</p>
+            <div class="step-one">
+              <div class="wom-input-container">
+                <input autocomplete="false" id="input-number" class="form-input name-form-input" type="text" maxlength="50" onfocus="this.setSelectionRange(this.value.length, this.value.length)">
+                <label class="wom-input-label" for="input-number">
+                  <span>Teléfono</span>
+                </label>
+                <span class="user-icon"><img src="assets/img/login/ic_mobile_gb.svg" alt=""></span>
+                <span class="example-text">Ej: 9 8765 4321</span>
+                <span class="warning-icon" style="display:none"><img src="assets/img/login/attention-icon.svg" alt=""></span>
+                <span class="warning-text">Este número no es WOM</span>
+                <span class="valid-icon"><img src="assets/img/login/valid-icon.svg" alt=""></span>
+              </div>
+              <button id="tel-btn" class="button-wave wave-bubble-gum mw-full wave-disabled">solicitar código por sms</button>
+            </div>
+            <div id="no-valid" class="content-container">
+              <img src="assets/img/login/noun_link.svg" alt="">
+              <h2>El enlace ya no<br> es válido</h2>
+              <p>Lo sentimos tenemos problemas con éste enlace, inicia sesión en Mi WOM</p>
+              <button class="button-wave wave-bubble-gum mw-full mb-20">iniciar sesión</button>
+              <button class="button-wave wave-purple-outline mw-full">ir a wom.cl</button>
+            </div>
+            <div class="miwom-login-wrap">
+              <div class="login-container">
+                <div id="bam-noclient" class="content-container">
+                  <img src="assets/img/login/ico_idcard.svg" alt="">
+                  <h3>Ese RUT no lo tenemos identificado como un cliente de WOM</h3>
+                  <p>¿Será que tienes una BAM prepago? 
+                  Si es así, ingresa conectándote a MiWOM directamente desde tu
+                  BAM WOM
+                  </p>
+                  <hr>
+                  <h4>INTENTAR NUEVAMENTE</h4>
+                </div>
+      
+                <div id="bam-directo" class="content-container">
+                  <h3>INGRESAR CON UNA BAM PREPAGO</h3>
+                  <p>Si tienes una BAM WOM Prepago, sólo ingresa conectándote a MIWOM directamen te desde tu Router.
+                  </p>
+                  <hr>
+                  <h4>VOLVER</h4>
+                </div>
+      
+                <div id="verification-code" class="content-container active">
+                  <p>Enviamos el código de acceso a tu teléfono móvil <span id="client-number">+56979976512</span></p>
+                  <div class="verification-warning">
+                    <img src="assets/img/login/attention-icon-white.svg" alt="">
+                    <p>El código de verificación no es válido. Inténtalo nuevamente.</p>
+                  </div>
+                  <div class="inputs-row">
+                    <input name="input0" id="input-num0" class="ver-input" type="text" placeholder='0' maxlength="1" autocomplete="off">
+                    <input name="input1" id="input-num1" class="ver-input" type="text" placeholder='0' maxlength="1" autocomplete="off">
+                    <input name="input2" id="input-num2" class="ver-input" type="text" placeholder='0' maxlength="1" autocomplete="off">
+                    <input name="input3" id="input-num3" class="ver-input" type="text" placeholder='0' maxlength="1" autocomplete="off">
+                  </div>
+                  <button id="ingresar-btn" class="ingresar">
+                    <span id="login-text">INGRESAR</span>
+                    <span class="smiley"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.88 71.1" width="40" height="40"><defs><style>.cls-1{fill:#fff;stroke:#fff;stroke-width:1.5px;}</style></defs><title>Icon_espera_un_momento</title><path class="cls-1" d="M40.83,79.05l-.13.07-.05,0-.06,0-.06,0,0,0-.06.06,0,0,0,.06,0,0,0,.06,0,.06,0,0,0,.07,0,0,0,.08,0,0,0,.08v11.1H22.9V88.69h5.88a1.36,1.36,0,1,0,0-2.72H22.9V81a20,20,0,0,0,3.54,1.64,1.67,1.67,0,0,0,.49.08,1.44,1.44,0,0,0,1.35-.89A1.35,1.35,0,0,0,27.42,80,15.63,15.63,0,0,1,16.66,65.48V35.63a2.77,2.77,0,0,1,5.54,0V60a5.51,5.51,0,0,0,5.41,5.35c-.23.34-.45.7-.66,1.07a1.31,1.31,0,0,0,.61,1.83,1.37,1.37,0,0,0,.66.16,1.46,1.46,0,0,0,1.27-.73,12.57,12.57,0,0,1,11.11-6.4h1.74a1.36,1.36,0,1,0,0-2.72h-6.1a2.72,2.72,0,0,1-2.77-2.63h0a2.71,2.71,0,0,1,2.77-2.63h10.3a2.91,2.91,0,0,1,1.5.42l.06,0a2.59,2.59,0,0,1,1.21,2.17v9.57a15.4,15.4,0,0,1-8.48,13.58Zm-13-34.29a2.71,2.71,0,0,1,2.77,2.62V60a2.77,2.77,0,0,1-5.54,0V47.39a2.7,2.7,0,0,1,2.77-2.63Zm8.4,0A2.7,2.7,0,0,1,39,47.39v3.16H36.24a5.87,5.87,0,0,0-2.77.7V47.39a2.71,2.71,0,0,1,2.77-2.63Zm5.64-15.21a2.77,2.77,0,0,1,5.54,0V50.62a6.4,6.4,0,0,0-.88-.07H41.88v-21Zm8.4,22.36V29.55a5.64,5.64,0,0,0-11.27,0V42.74a5.83,5.83,0,0,0-2.77-.69A5.74,5.74,0,0,0,32,43.84a5.74,5.74,0,0,0-4.2-1.79,5.83,5.83,0,0,0-2.77.69V35.63a5.51,5.51,0,0,0-5.64-5.35,5.51,5.51,0,0,0-5.64,5.35V65.48A17.86,17.86,0,0,0,20,78.88V92.44a1.4,1.4,0,0,0,1.43,1.36h20a1.4,1.4,0,0,0,1.43-1.36V81a18,18,0,0,0,9.24-15.55V55.9a5.21,5.21,0,0,0-1.89-4Z" transform="translate(-13.04 -23.45)"/></svg></span>
+                  </button>
+                  <h4 id="resend-link" class="">REENVIAR SMS</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="darkside">
+            <h2>Darkside detected!</h2>
+            <img src="assets/img/login/darkside.svg" alt="">
+            <p>¡Ohh no! hemos detectado que vienes del lado oscuro, para ingresar primero debes pertenecer a nuestra compañía</p>
+            <button class="button-wave wave-bubble-gum mw-full mt-20">portate aquí</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+  <script src="assets/js/anime.min.js"></script>
+  <script src="assets/js/cleave.min.js"></script>
+  <script>
+    /*--------JAVASCRIPT INPUT----------*/
+    const formInputs = document.querySelectorAll(".form-input");
+    for (let i = 0; i < formInputs.length; i++) {
+      formInputs[i].addEventListener("focus", function () {
+        this.parentElement.querySelector(".user-icon").classList.add("active");
+      })
+      formInputs[i].addEventListener("focusout", function () {
+        if (this.parentElement.classList.contains('input-valid')) {
+          this.parentElement.querySelector(".user-icon").classList.add("active");
+        }
+        if(this.value.length == 0) {
+          this.parentElement.querySelector(".user-icon").classList.remove("active");
+          this.nextElementSibling.classList.remove('active');
+          this.parentElement.classList.remove('input-invalid');
+        }
+        else{
+          this.parentElement.querySelector(".user-icon").classList.add("active");
+          this.nextElementSibling.classList.add('active');
+        }
+      })
+    }
+
+    /*-----------VALIDATE PHONE-------------*/
+    function validPhone(){
+      const numInput = document.querySelector('#input-number');
+      const numBtn = document.querySelector('#tel-btn');
+      numInput.value.length >= 13 ? (numInput.parentElement.classList.add('input-valid'),numBtn.classList.remove('wave-disabled')) : (numInput.parentElement.classList.remove('input-valid'),numBtn.classList.add('wave-disabled'));
+    }
+    function validatePhone(){
+      const numInput = document.querySelector('#input-number');
+      const numBtn = document.querySelector('#tel-btn');
+      numInput.value = '';
+      numInput.addEventListener('focus',function(){
+          validPhone();
+          new Cleave(numInput, {
+              prefix:'+56',
+              numericOnly: true,
+              uppercase: true,
+              blocks: [3,9]
+          });
+      })
+      numInput.addEventListener('input', validPhone, false);
+    }validatePhone();
+
+    function validateInput(){
+      const inputCont = document.querySelector('.wom-input-container')
+      const telBtn = document.getElementById('tel-btn')
+      inputCont.classList.contains('input-valid') ? telBtn.classList.remove('wave-disabled') : telBtn.classList.add('wave-disabled')
+
+      telBtn.addEventListener('click', function(){
+        const stepOne = document.querySelector('.step-one')
+        anime.timeline({easing: 'easeInOutSine',})
+        .add({
+          targets: stepOne,
+          opacity: [1, 0],
+          translateY:[0,-10],
+          duration:300,
+          complete: ()=>{
+            stepOne.style.display = 'none'
+          }
+        })
+        const logWrap = document.querySelector('.miwom-login-wrap')
+        logWrap.classList.add('active')
+        anime.timeline({easing: 'easeInOutSine',})
+        .add({
+          targets: '.miwom-login-wrap',
+          opacity: [0, 1],
+          translateY:[10,0],
+          maxHeight: [0, 400],
+          duration:300,
+        }, 300)
+      })
+    }validateInput()
+
+    /*---------VALIDATE NUMBERS--------*/
+    function validateNumber(event) {
+      const key = window.event ? event.keyCode : event.which;
+      if(event.keyCode == 8 || event.keyCode == 46){
+        event.target.classList.remove('valid')
+        let myLength = event.target.value.length;
+        if (myLength == 0) {
+          let previous = event.target;
+          while (previous = previous.previousElementSibling) {
+            if (previous == null)
+              break;
+            if (previous.tagName.toLowerCase() === "input") {
+              previous.focus();
+              previous.select();
+            break;
+            }
+          }
+        }
+        return true;
+      }else if(event.keyCode == 37 || event.keyCode == 39){
+        return true;
+      }else if(key == 9){
+        return true;
+      }else if ( key < 48 || key > 57 ) {
+        event.preventDefault();
+        return false;
+      } else {
+        event.target.classList.add('valid')
+        let maxLength = parseInt(event.target.attributes["maxlength"].value, 10);
+        let myLength = event.target.value.length;
+        if (myLength >= maxLength) {
+          let next = event.target;
+          let cleave = new Cleave(next, {
+            numeral: true,
+            numeralThousandsGroupStyle: 'thousand'
+          });
+          console.log(cleave)
+          while (next = next.nextElementSibling) {
+            if (next == null)
+              break;
+            if (next.tagName.toLowerCase() === "input") {
+              next.focus();
+              next.select();
+            break;
+            }
+          }
+        }
+        return true;
+      }
+    }
+
+    /*---------BACK LETTERS----------*/
+    function validateBackLetters(){
+      const key = window.event ? event.keyCode : event.which;
+      if ( key < 48 || key > 57 ) {
+        event.preventDefault();
+        return false;
+      }
+    }
+
+    function checkValid(elem){
+      return elem.classList.contains('valid')
+    }
+
+    const inputVer = document.querySelectorAll('.ver-input')
+    const inputArr = Array.from(inputVer)
+    inputVer.forEach(function(elem) {
+      elem.addEventListener('keypress', function(){
+        validateBackLetters();
+      })
+      elem.addEventListener('keyup', function(event){
+        validateNumber(event);
+        const inputUpdate = document.querySelectorAll('.ver-input');
+        const ingresarBtn = document.querySelector('#ingresar-btn');
+        const ingresarTxt = document.querySelector('#login-text');
+        const inputArr = Array.from(inputUpdate)
+        inputArr.every(checkValid) ? ( 
+          ingresarBtn.classList.add('active'),
+          ingresarBtn.addEventListener('click',()=>{
+            ingresarBtn.classList.add('logging-in');
+            anime.timeline({
+              easing:'easeOutExpo',
+              duration:600
+            })
+            .add({
+              targets:ingresarTxt,
+              opacity:[1,0],
+              translateY:[0,10],
+              complete: function(anim) {
+                ingresarTxt.innerHTML = 'INGRESANDO...'
+              }
+            })
+            .add({
+              targets:ingresarTxt,
+              translateY:[10,0],
+              opacity:[0,1],
+            })
+          })
+        ) : (ingresarBtn.classList.remove('active'));  
+        inputArr.every(checkValid) ? ( ingresarBtn.classList.add('active')) : ( ingresarBtn.classList.remove('active'))
+      })
+    })
+
+    /*----------TIME JS----------*/
+    timeLeft = 30;
+    timerId = null;
+    function resendTimer(){
+      const elem = document.querySelector('#resend-link');
+      timerId = setInterval(countdown, 1000);
+      
+      function countdown() {
+        if (timeLeft == 0) {
+          clearTimeout(timerId);
+          elem.innerHTML = 'REENVIAR SMS ';
+          elem.classList.add('active');
+        } else {
+          elem.classList.remove('active');
+          elem.innerHTML = 'REENVIAR SMS (' + timeLeft + ' seg)';
+          timeLeft--;
+        }
+      }
+    }
+    resendTimer();
+
+    /*----------RESEND LINK JS----------*/
+    function resendLink(){
+      const inputs = document.querySelectorAll('.ver-input');
+      document.querySelector('#resend-link').addEventListener('click',function(e){
+        this.classList.contains('active') ? (
+          timeLeft = 30,
+          resendTimer(),
+          e.preventDefault(),
+            inputs.forEach(e => (
+              e.value = "",
+              e.classList.remove('valid'),
+              anime.timeline({
+                easing:'easeOutExpo',
+                duration:600
+              })
+              .add({
+                targets:'.verification-warning',
+                opacity:[1,0],
+                maxHeight:['100%', '0px'],
+                padding: '0px',
+                margin: '0px',
+                complete: function(anime){
+                  document.querySelector('.verification-warning').style.display = 'none';
+                }
+              })
+            ))
+        ) : "";
+      })
+    }  
+    resendLink();
+
+    /*--------SHOW MODAL---------*/
+    function showModalWom(){
+      const modalOverlayWom = document.querySelector('#modal-overlay-wom');
+      const modalWom = document.querySelector('.modal-wom');
+      modalWom.classList.remove('reboteout');
+      modalWom.classList.add('rebotein');
+      setTimeout(() => {modalWom.style.display = 'flex';}, '50');
+      modalOverlayWom.style.display = 'flex';
+      setTimeout(() => {modalOverlayWom.style.opacity = '1';}, '200');
+    }showModalWom()
+
+  </script>
+</html>

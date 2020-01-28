@@ -1,0 +1,254 @@
+//INPUTS WOM
+.wom-input-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+
+  &.input-valid {
+    input {
+      background: white;
+      outline: none;
+      border: 1px solid #B3A6BA;
+    }
+
+    label {
+      font-size: 13px;
+      -webkit-transform: translate(36px, -14px);
+      -ms-transform: translate(36px, -14px);
+      transform: translate(36px, -14px);
+    }
+
+    span.valid-icon {
+      -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+
+  &.input-invalid span {
+    &.warning-icon, &.warning-text {
+      -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+  }
+
+  input {
+    width: 100%;
+    border-radius: 5px;
+    height: 60px;
+    border: 1px solid #E6E2E8;
+    -webkit-box-shadow: 0px 9px 15px -6px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 9px 15px -6px rgba(0, 0, 0, 0.14);
+    padding: 20px 34px 0 50px;
+    background: #fafafa;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 18px;
+    color: #3E2E49;
+    font-family: 'cerapro';
+
+    &:focus {
+      background: white;
+      outline: none;
+      border: 1px solid #B3A6BA;
+
+      + label {
+        font-size: 13px;
+        -webkit-transform: translate(36px, -14px);
+        -ms-transform: translate(36px, -14px);
+        transform: translate(36px, -14px);
+      }
+    }
+  }
+
+  label {
+    font-family: "cerapro";
+    font-size: 20px;
+    color: #9A89A4;
+    position: absolute;
+    left: 15px;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+    -webkit-transition: font-size .3s ease, color .3s .1s ease, -webkit-transform .3s ease;
+    transition: font-size .3s ease, color .3s .1s ease, -webkit-transform .3s ease;
+    -o-transition: transform .3s ease, font-size .3s ease, color .3s .1s ease;
+    transition: transform .3s ease, font-size .3s ease, color .3s .1s ease;
+    transition: transform .3s ease, font-size .3s ease, color .3s .1s ease, -webkit-transform .3s ease;
+
+    &.active {
+      font-size: 13px;
+      -webkit-transform: translate(36px, -14px);
+      -ms-transform: translate(36px, -14px);
+      transform: translate(36px, -14px);
+    }
+
+    span {
+      width: 150px;
+    }
+  }
+
+  span {
+    &.example-text {
+      position: absolute;
+      right: 15px;
+      -webkit-transform: translate(0px, -14px);
+      -ms-transform: translate(0px, -14px);
+      transform: translate(0px, -14px);
+      font-family: "cerapro";
+      color: #B3A6BA;
+      font-size: 12px;
+      max-width: 158px;
+      text-align: end;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    &.user-icon {
+      position: absolute;
+      -webkit-transform: translate(0px, 0px);
+      -ms-transform: translate(0px, 0px);
+      transform: translate(0px, 0px);
+      left: 0px;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+
+      img {
+        max-width: 23px;
+      }
+
+      &.active {
+        position: absolute;
+        -webkit-transform: translate(15px, 0px);
+        -ms-transform: translate(15px, 0px);
+        transform: translate(15px, 0px);
+        opacity: 1;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+      }
+    }
+
+    &.warning-icon, &.valid-icon {
+      display: block;
+      position: absolute;
+      right: 12px;
+      top: 33px;
+      opacity: 0;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -webkit-transform: translate(-20px, 0px);
+      -ms-transform: translate(-20px, 0px);
+      transform: translate(-20px, 0px);
+    }
+
+    &.warning-text {
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 59px;
+      opacity: 0;
+      -webkit-transition: all 0.3s 0.2s ease;
+      -o-transition: all 0.3s 0.2s ease;
+      transition: all 0.3s 0.2s ease;
+      border-radius: 10px;
+      background: #E92070;
+      font-family: "cerapro";
+      font-size: 12px;
+      color: white;
+      padding: 3px 10px;
+      -webkit-transform: translate(-20px, 0px);
+      -ms-transform: translate(-20px, 0px);
+      transform: translate(-20px, 0px);
+    }
+  }
+}
+.inputs-row{
+  padding: 10px 0;
+  .ver-input{
+    max-width:44px!important;
+    height:65px;
+    border: 2px solid #B3A6BA;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 2px 12px 0 rgba(215,203,203,0.5);
+    box-shadow: 0 2px 12px 0 rgba(215,203,203,0.5);
+    outline: none;
+    font-size:30px;
+    padding:10px;
+    -webkit-transition:border 0.3s ease;
+    -o-transition:border 0.3s ease;
+    transition:border 0.3s ease;
+    text-align: center;
+    @media(max-width: 375px){
+      max-width: 36px !important;
+      height: 60px;
+      font-size: 25px;
+      padding: 8px;
+    }
+
+    &.valid{
+        border: 2px solid #E92070;
+    }
+    &::placeholder{
+        color: #DEDAE0;
+    }
+    &::-webkit-input-placeholder{
+        color: #DEDAE0;
+    }
+    &:-ms-input-placeholder{
+        color: #DEDAE0;
+    }
+    &::-moz-input-placeholder{
+        color: #DEDAE0;
+    }
+  }
+} 
+.link-sms{
+  color: #CCC4D2;
+  text-decoration: none;
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  pointer-events: none;
+
+  &.active{
+    color: #E92070;
+    pointer-events: unset;
+  }
+}
+.cambiar-num{
+  font-size: 16px;
+  line-height: 20px;
+  color: #E92070;
+  margin: 20px 0;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 500;
+  transition: color .3s;
+  &:hover{
+    color: #b11c57;
+  }
+}

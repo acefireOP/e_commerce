@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="17px" viewBox="0 0 15 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>rubber</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-2-Copy" transform="translate(-57.000000, -596.000000)" fill="#3D1058" fill-rule="nonzero">
+            <g id="Group-10" transform="translate(57.000000, 595.000000)">
+                <g id="rubber" transform="translate(0.000000, 1.000000)">
+                    <path d="M14.8284759,4.8560599 L10.5769904,0.188336573 C10.3482916,-0.0627552715 9.97746707,-0.0628024426 9.74876831,0.188336573 L3.14516129,7.43858409 L8.22482595,13.015625 L14.8284759,5.76542465 C15.0571747,5.51437998 15.0571747,5.10724609 14.8284759,4.8560599 Z" id="Shape"></path>
+                    <path d="M1.9538701,8.5 L0.170968451,10.4574804 C-0.0569894835,10.7076656 -0.0569894835,11.1134056 0.170968451,11.3635908 L4.40788607,16.0155214 C4.63580119,16.2657066 5.00535508,16.2656125 5.2332702,16.0155214 L7.01612903,14.0579939 L1.9538701,8.5 Z" id="Shape"></path>
+                    <polygon id="Shape" points="6.29032258 17 14.516129 17 14.516129 15.671875 7.69279695 15.671875"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
