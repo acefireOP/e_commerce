@@ -67,10 +67,14 @@
                     <p>El código de verificación no es válido. Inténtalo nuevamente.</p>
                   </div>
                   <div class="inputs-row">
-                    <input name="input0" id="input-num0" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
+                    <!--<input name="input0" id="input-num0" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
                     <input name="input1" id="input-num1" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
                     <input name="input2" id="input-num2" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
-                    <input name="input3" id="input-num3" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
+                    <input name="input3" id="input-num3" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">-->
+                    <input name="input0" id="input-num0" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
+                    <input name="input1" id="input-num1" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
+                    <input name="input2" id="input-num2" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
+                    <input name="input3" id="input-num3" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
                   </div>
                   <button id="ingresar-btn" class="ingresar">
                     <span id="login-text">INGRESAR</span>
@@ -198,14 +202,18 @@
         return false;
       } else {
         event.target.classList.add('valid')
-        let maxLength = parseInt(event.target.attributes["maxlength"].value);
+        let maxLength = parseInt(event.target.attributes["maxlength"].value, 2);
         let myLength = event.target.value.length;
-        if (myLength >= maxLength) {
+        if(myLength > 1){
+            
+        }
+        if (myLength >= maxLength && myLength < 2) {
           let next = event.target;
           while (next = next.nextElementSibling) {
             if (next == null)
               break;
             if (next.tagName.toLowerCase() === "input") {
+
               next.focus();
               next.select();
             break;
