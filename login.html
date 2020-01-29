@@ -67,18 +67,14 @@
                     <p>El código de verificación no es válido. Inténtalo nuevamente.</p>
                   </div>
                   <div class="inputs-row">
-                    <!--<input name="input0" id="input-num0" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
-                    <input name="input1" id="input-num1" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
-                    <input name="input2" id="input-num2" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">
-                    <input name="input3" id="input-num3" class="ver-input" type="number" placeholder='0' maxlength="1" autocomplete="off">-->
-                    <input name="input0" id="input-num0" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
-                    <input name="input1" id="input-num1" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
-                    <input name="input2" id="input-num2" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
-                    <input name="input3" id="input-num3" class="ver-input" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type = "number" maxlength = "1" />
+                    <input autocomplete="false" id="input-num1" class="ver-input" type="number" max="1" placeholder="0">
+                    <input autocomplete="false" id="input-num2" class="ver-input" type="number" max="1" placeholder="0">
+                    <input autocomplete="false" id="input-num3" class="ver-input" type="number" max="1" placeholder="0">
+                    <input autocomplete="false" id="input-num4" class="ver-input" type="number" max="1" placeholder="0">
                   </div>
                   <button id="ingresar-btn" class="ingresar">
-                    <span id="login-text">INGRESAR</span>
-                    <span class="smiley"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.88 71.1" width="40" height="40"><defs><style>.cls-1{fill:#fff;stroke:#fff;stroke-width:1.5px;}</style></defs><title>Icon_espera_un_momento</title><path class="cls-1" d="M40.83,79.05l-.13.07-.05,0-.06,0-.06,0,0,0-.06.06,0,0,0,.06,0,0,0,.06,0,.06,0,0,0,.07,0,0,0,.08,0,0,0,.08v11.1H22.9V88.69h5.88a1.36,1.36,0,1,0,0-2.72H22.9V81a20,20,0,0,0,3.54,1.64,1.67,1.67,0,0,0,.49.08,1.44,1.44,0,0,0,1.35-.89A1.35,1.35,0,0,0,27.42,80,15.63,15.63,0,0,1,16.66,65.48V35.63a2.77,2.77,0,0,1,5.54,0V60a5.51,5.51,0,0,0,5.41,5.35c-.23.34-.45.7-.66,1.07a1.31,1.31,0,0,0,.61,1.83,1.37,1.37,0,0,0,.66.16,1.46,1.46,0,0,0,1.27-.73,12.57,12.57,0,0,1,11.11-6.4h1.74a1.36,1.36,0,1,0,0-2.72h-6.1a2.72,2.72,0,0,1-2.77-2.63h0a2.71,2.71,0,0,1,2.77-2.63h10.3a2.91,2.91,0,0,1,1.5.42l.06,0a2.59,2.59,0,0,1,1.21,2.17v9.57a15.4,15.4,0,0,1-8.48,13.58Zm-13-34.29a2.71,2.71,0,0,1,2.77,2.62V60a2.77,2.77,0,0,1-5.54,0V47.39a2.7,2.7,0,0,1,2.77-2.63Zm8.4,0A2.7,2.7,0,0,1,39,47.39v3.16H36.24a5.87,5.87,0,0,0-2.77.7V47.39a2.71,2.71,0,0,1,2.77-2.63Zm5.64-15.21a2.77,2.77,0,0,1,5.54,0V50.62a6.4,6.4,0,0,0-.88-.07H41.88v-21Zm8.4,22.36V29.55a5.64,5.64,0,0,0-11.27,0V42.74a5.83,5.83,0,0,0-2.77-.69A5.74,5.74,0,0,0,32,43.84a5.74,5.74,0,0,0-4.2-1.79,5.83,5.83,0,0,0-2.77.69V35.63a5.51,5.51,0,0,0-5.64-5.35,5.51,5.51,0,0,0-5.64,5.35V65.48A17.86,17.86,0,0,0,20,78.88V92.44a1.4,1.4,0,0,0,1.43,1.36h20a1.4,1.4,0,0,0,1.43-1.36V81a18,18,0,0,0,9.24-15.55V55.9a5.21,5.21,0,0,0-1.89-4Z" transform="translate(-13.04 -23.45)"/></svg></span>
+                      <span id="login-text">INGRESAR</span>
+                      <span class="smiley"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 39.88 71.1" width="40" height="40"><defs><style>.cls-1{fill:#fff;stroke:#fff;stroke-width:1.5px;}</style></defs><title>Icon_espera_un_momento</title><path class="cls-1" d="M40.83,79.05l-.13.07-.05,0-.06,0-.06,0,0,0-.06.06,0,0,0,.06,0,0,0,.06,0,.06,0,0,0,.07,0,0,0,.08,0,0,0,.08v11.1H22.9V88.69h5.88a1.36,1.36,0,1,0,0-2.72H22.9V81a20,20,0,0,0,3.54,1.64,1.67,1.67,0,0,0,.49.08,1.44,1.44,0,0,0,1.35-.89A1.35,1.35,0,0,0,27.42,80,15.63,15.63,0,0,1,16.66,65.48V35.63a2.77,2.77,0,0,1,5.54,0V60a5.51,5.51,0,0,0,5.41,5.35c-.23.34-.45.7-.66,1.07a1.31,1.31,0,0,0,.61,1.83,1.37,1.37,0,0,0,.66.16,1.46,1.46,0,0,0,1.27-.73,12.57,12.57,0,0,1,11.11-6.4h1.74a1.36,1.36,0,1,0,0-2.72h-6.1a2.72,2.72,0,0,1-2.77-2.63h0a2.71,2.71,0,0,1,2.77-2.63h10.3a2.91,2.91,0,0,1,1.5.42l.06,0a2.59,2.59,0,0,1,1.21,2.17v9.57a15.4,15.4,0,0,1-8.48,13.58Zm-13-34.29a2.71,2.71,0,0,1,2.77,2.62V60a2.77,2.77,0,0,1-5.54,0V47.39a2.7,2.7,0,0,1,2.77-2.63Zm8.4,0A2.7,2.7,0,0,1,39,47.39v3.16H36.24a5.87,5.87,0,0,0-2.77.7V47.39a2.71,2.71,0,0,1,2.77-2.63Zm5.64-15.21a2.77,2.77,0,0,1,5.54,0V50.62a6.4,6.4,0,0,0-.88-.07H41.88v-21Zm8.4,22.36V29.55a5.64,5.64,0,0,0-11.27,0V42.74a5.83,5.83,0,0,0-2.77-.69A5.74,5.74,0,0,0,32,43.84a5.74,5.74,0,0,0-4.2-1.79,5.83,5.83,0,0,0-2.77.69V35.63a5.51,5.51,0,0,0-5.64-5.35,5.51,5.51,0,0,0-5.64,5.35V65.48A17.86,17.86,0,0,0,20,78.88V92.44a1.4,1.4,0,0,0,1.43,1.36h20a1.4,1.4,0,0,0,1.43-1.36V81a18,18,0,0,0,9.24-15.55V55.9a5.21,5.21,0,0,0-1.89-4Z" transform="translate(-13.04 -23.45)"/></svg></span>
                   </button>
                   <h4 id="resend-link" class="">REENVIAR SMS</h4>
                 </div>
@@ -174,107 +170,85 @@
       })
     }validateInput()
 
-    /*---------VALIDATE NUMBERS--------*/
-    function validateNumber(event) {
-      const key = window.event ? event.keyCode : event.which;
-      if(event.keyCode == 8 || event.keyCode == 46){
-        event.target.classList.remove('valid')
-        let myLength = event.target.value.length;
-        if (myLength == 0) {
-          let previous = event.target;
-          while (previous = previous.previousElementSibling) {
-            if (previous == null)
-              break;
-            if (previous.tagName.toLowerCase() === "input") {
-              previous.focus();
-              previous.select();
-            break;
-            }
-          }
+    /*------VALIDATE SMALL INPUTS------*/
+    function smallInputs(){
+        let oldValue = "";
+        let input1 = document.querySelector('#input-num1');
+        let input2 = document.querySelector('#input-num2');
+        let input3 = document.querySelector('#input-num3');
+        let input4 = document.querySelector('#input-num4');
+        const inputs = document.querySelectorAll('.ver-input');
+        const inputsArr = Array.from(inputs);
+        function checkValid(element){
+          return element.classList.contains('valid');
         }
-        return true;
-      }else if(event.keyCode == 37 || event.keyCode == 39){
-        return true;
-      }else if(key == 9){
-        return true;
-      }else if ( key < 48 || key > 57 ) {
-        event.preventDefault();
-        return false;
-      } else {
-        event.target.classList.add('valid')
-        let maxLength = parseInt(event.target.attributes["maxlength"].value, 2);
-        let myLength = event.target.value.length;
-        if(myLength > 1){
+
+        // listen for "input" event, since that handles all keypresses as well as cut/paste
+        const resendBtn = document.querySelector('#resend-link');
+        inputs.forEach((input)=>{
+            input.addEventListener('input', function (event) {
+            let input = event.target;
+            const ingresarBtn = document.querySelector('.ingresar');
+            const ingresarTxt = document.querySelector('#login-text');
+
             
-        }
-        if (myLength >= maxLength && myLength < 2) {
-          let next = event.target;
-          while (next = next.nextElementSibling) {
-            if (next == null)
-              break;
-            if (next.tagName.toLowerCase() === "input") {
-
-              next.focus();
-              next.select();
-            break;
+            if (validateInput(input.value)) {
+                // update old value with new value
+                oldValue = input.value;
+                this.classList.add('valid');
+                input.id == "input-num1" ? input2.focus() : "";
+                input.id == "input-num2" ? input3.focus() : "";
+                input.id == "input-num3" ? input4.focus() : "";
+                input.id == "input-num4" ? input4.focus() : "";
+                inputsArr.every(checkValid) ? (
+                    ingresarBtn.classList.add('active'),
+                    ingresarBtn.addEventListener('click',()=>{
+                        ingresarBtn.classList.add('logging-in');
+                        anime.timeline({
+                            easing:'easeOutExpo',
+                            duration:600
+                        })
+                        .add({
+                            targets:ingresarTxt,
+                            opacity:[1,0],
+                            translateY:[0,10],
+                            complete: function(anim) {
+                                ingresarTxt.innerHTML = 'INGRESANDO...'
+                            }
+                        })
+                        .add({
+                            targets:ingresarTxt,
+                            translateY:[10,0],
+                            opacity:[0,1],
+                        })
+                    })
+                ) : (ingresarBtn.classList.remove('active'));
+                event.data == "e" ? (this.value = null) : "";
+                event.data == "." ? (this.value = null) : "";
             }
-          }
+
+
+            if (input.value == "") {
+                this.classList.remove('valid');
+                this.id == "input-num4" ? input3.focus() : "";
+                this.id == "input-num3" ? input2.focus() : "";
+                this.id == "input-num2" ? input1.focus() : "";
+                this.id == "input-num1" ? input1.focus() : "";
+            }
+            else {
+                // set value to last known valid value
+                input.value = oldValue;
+            }
+            });
+        })
+
+        function validateInput(str) {
+        // check length, if is a number, if is whole number, if no periods
+        return /^[0-9]{0,1}$/.test(str);
         }
-        return true;
-      }
     }
-
-    /*---------BACK LETTERS----------*/
-    function validateBackLetters(){
-      const key = window.event ? event.keyCode : event.which;
-      if ( key < 48 || key > 57 ) {
-        event.preventDefault();
-        return false;
-      }
-    }
-
-    function checkValid(elem){
-      return elem.classList.contains('valid')
-    }
-
-    const inputVer = document.querySelectorAll('.ver-input')
-    const inputArr = Array.from(inputVer)
-    inputVer.forEach(function(elem) {
-      elem.addEventListener('keypress', function(){
-        validateBackLetters();
-      })
-      elem.addEventListener('keyup', function(event){
-        validateNumber(event);
-        const inputUpdate = document.querySelectorAll('.ver-input');
-        const ingresarBtn = document.querySelector('#ingresar-btn');
-        const ingresarTxt = document.querySelector('#login-text');
-        const inputArr = Array.from(inputUpdate)
-        inputArr.every(checkValid) ? ( 
-          ingresarBtn.classList.add('active'),
-          ingresarBtn.addEventListener('click',()=>{
-            ingresarBtn.classList.add('logging-in');
-            anime.timeline({
-              easing:'easeOutExpo',
-              duration:600
-            })
-            .add({
-              targets:ingresarTxt,
-              opacity:[1,0],
-              translateY:[0,10],
-              complete: function(anim) {
-                ingresarTxt.innerHTML = 'INGRESANDO...'
-              }
-            })
-            .add({
-              targets:ingresarTxt,
-              translateY:[10,0],
-              opacity:[0,1],
-            })
-          })
-        ) : (ingresarBtn.classList.remove('active'));  
-        inputArr.every(checkValid) ? ( ingresarBtn.classList.add('active')) : ( ingresarBtn.classList.remove('active'))
-      })
-    })
+    smallInputs();
+   
 
     /*----------TIME JS----------*/
     timeLeft = 30;
